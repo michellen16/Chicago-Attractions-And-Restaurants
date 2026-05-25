@@ -2,6 +2,6 @@ This project was for my CS 478 course during my Spring 2026 semester at the Univ
 
 The first app, A1, serves as a simple interaction hub where users can select between two categories of interest, attractions or restaurants, using two buttons paired with descriptive read-only text views. The second app, A2, receives these intents and dynamically launches the appropriate activity based on the received data. One activity presents a curated list of at least five Chicago attractions, while the other displays at least five restaurants within Chicago city limits. Each activity is built using a two-fragment architecture: a list fragment and a WebView fragment.
 
-This project demonstrates Android development skills including implicit intents, fragment-based UI design, WebView integration, action bar configuration, menu handling, and state persistence across lifecycle events.
+This project demonstrates Android development skills including implicit intents, fragment-based UI design, WebView integration, action bar configuration, menu handling, and state persistence across lifecycle events. As required by the course, Claude AI was used as a development assistant to support debugging and guide implementation choices. It was used as a learning tool to improve development efficiency while maintaining a strong understanding of all implemented code.
 
 The complete project is available in both the Project3App1.zip and Project3App2.zip files, with additional source files separated for clarity and easier navigation through the core implementation.
