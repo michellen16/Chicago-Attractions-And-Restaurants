@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/list_background">
+
+    <!-- Header bar -->
+    <TextView
+        android:id="@+id/tvListHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tap_to_explore"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:background="@color/header_color"
+        android:padding="10dp"
+        android:gravity="center" />
+
+    <!-- Scrollable list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPlaces"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp" />
+
+</LinearLayout>

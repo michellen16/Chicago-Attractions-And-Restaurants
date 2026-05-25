@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_blue"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <!-- ─────────────────────────────────────────── -->
+    <!--  App Title                                  -->
+    <!-- ─────────────────────────────────────────── -->
+    <TextView
+        android:id="@+id/tvAppTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/app_title"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ─────────────────────────────────────────── -->
+    <!--  Subtitle / Welcome message                 -->
+    <!-- ─────────────────────────────────────────── -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/app_subtitle"
+        android:textSize="16sp"
+        android:textColor="@color/white_translucent"
+        android:gravity="center"
+        android:paddingBottom="32dp"
+        app:layout_constraintTop_toBottomOf="@id/tvAppTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ─────────────────────────────────────────── -->
+    <!--  Divider                                    -->
+    <!-- ─────────────────────────────────────────── -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ─────────────────────────────────────────── -->
+    <!--  Card: Attractions                          -->
+    <!-- ─────────────────────────────────────────── -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAttractions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/card_attractions"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cardRestaurants"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center">
+
+            <!-- Icon placeholder using text emoji -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🏛️"
+                android:textSize="48sp"
+                android:gravity="center"
+                android:paddingBottom="12dp" />
+
+            <!-- Description TextView for Attractions -->
+            <TextView
+                android:id="@+id/tvAttractionsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/attractions_description"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:paddingBottom="8dp" />
+
+            <!-- Sub-description TextView for Attractions -->
+            <TextView
+                android:id="@+id/tvAttractionsSubDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/attractions_sub_description"
+                android:textSize="13sp"
+                android:textColor="@color/white_translucent"
+                android:gravity="center"
+                android:paddingBottom="20dp" />
+
+            <!-- Attractions Button -->
+            <Button
+                android:id="@+id/btnAttractions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_attractions"
+                android:textSize="16sp"
+                android:textColor="@color/card_attractions"
+                android:backgroundTint="@color/white"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:fontFamily="sans-serif-medium"
+                style="@style/Widget.AppCompat.Button.Colored" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- ─────────────────────────────────────────── -->
+    <!--  Card: Restaurants                          -->
+    <!-- ─────────────────────────────────────────── -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardRestaurants"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/card_restaurants"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintStart_toEndOf="@id/cardAttractions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center">
+
+            <!-- Icon placeholder using text emoji -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🍽️"
+                android:textSize="48sp"
+                android:gravity="center"
+                android:paddingBottom="12dp" />
+
+            <!-- Description TextView for Restaurants -->
+            <TextView
+                android:id="@+id/tvRestaurantsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/restaurants_description"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:paddingBottom="8dp" />
+
+            <!-- Sub-description TextView for Restaurants -->
+            <TextView
+                android:id="@+id/tvRestaurantsSubDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/restaurants_sub_description"
+                android:textSize="13sp"
+                android:textColor="@color/white_translucent"
+                android:gravity="center"
+                android:paddingBottom="20dp" />
+
+            <!-- Restaurants Button -->
+            <Button
+                android:id="@+id/btnRestaurants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_restaurants"
+                android:textSize="16sp"
+                android:textColor="@color/card_restaurants"
+                android:backgroundTint="@color/white"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:fontFamily="sans-serif-medium"
+                style="@style/Widget.AppCompat.Button.Colored" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

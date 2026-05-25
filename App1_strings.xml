@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App Identity -->
+    <string name="app_name">A1</string>
+    <string name="app_title">🌆 Explore Chicago</string>
+    <string name="app_subtitle">
+        Your guide to the best of the Windy City.\nChoose what you\'d like to explore:
+    </string>
+
+    <!-- Attractions Card -->
+    <string name="attractions_description">Points of Interest</string>
+    <string name="attractions_sub_description">
+        Discover iconic landmarks, museums, parks,
+        and cultural attractions across Chicago.
+    </string>
+    <string name="btn_attractions">EXPLORE ATTRACTIONS</string>
+
+    <!-- Restaurants Card -->
+    <string name="restaurants_description">Restaurants &amp; Dining</string>
+    <string name="restaurants_sub_description">
+        From deep-dish pizza to world-class fine dining —
+        find the best places to eat in Chicago.
+    </string>
+    <string name="btn_restaurants">FIND RESTAURANTS</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_attractions">Loading Chicago Attractions…</string>
+    <string name="toast_restaurants">Loading Chicago Restaurants…</string>
+
+    <!-- Intent Actions (custom implicit intent action strings) -->
+    <string name="intent_action_attractions">com.example.a1.action.SHOW_ATTRACTIONS</string>
+    <string name="intent_action_restaurants">com.example.a1.action.SHOW_RESTAURANTS</string>
+
+    <!-- Intent Categories -->
+    <string name="intent_category">com.example.a1.category.CHICAGO_GUIDE</string>
+
+</resources>

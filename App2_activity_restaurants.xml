@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- Left panel: List Fragment (starts full-width, shrinks to 1/3) -->
+    <FrameLayout
+        android:id="@+id/containerList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0" />
+
+    <!-- Right panel: Web Fragment (hidden until item selected, then 2/3) -->
+    <FrameLayout
+        android:id="@+id/containerWeb"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:visibility="gone" />
+
+</LinearLayout>
