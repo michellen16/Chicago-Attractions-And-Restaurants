@@ -1,2 +1,7 @@
-# ChicagoAttractionsRestaurantsTwoApps
-Two connected Android apps where one sends implicit intents for Chicago attractions and restaurants, and the other receives them to display selectable lists and details using fragments and WebView.
+This project was for my CS 478 course during my Spring 2026 semester at the University of Illinois Chicago. I independently designed and developed two cooperating Android applications, A1 and A2, intended to simulate a city guide system for visitors exploring Chicago.
+
+The first app, A1, serves as a simple interaction hub where users can select between two categories of interest, attractions or restaurants, using two buttons paired with descriptive read-only text views. The second app, A2, receives these intents and dynamically launches the appropriate activity based on the received data. One activity presents a curated list of at least five Chicago attractions, while the other displays at least five restaurants within Chicago city limits. Each activity is built using a two-fragment architecture: a list fragment and a WebView fragment.
+
+This project demonstrates Android development skills including implicit intents, fragment-based UI design, WebView integration, action bar configuration, menu handling, and state persistence across lifecycle events.
+
+The complete project is available in both the Project3App1.zip and Project3App2.zip files, with additional source files separated for clarity and easier navigation through the core implementation.
